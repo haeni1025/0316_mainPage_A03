@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>강원천문대</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="lib/jquery-1.12.3.js"></script>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <header id="header">
+            <div id="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="로고 이미지" width="200">
+                </a>
+            </div>
+
+            <nav id="gnb">
+                <ul id="mainMenu">
+                    <li><a href="#">강원천문대</a>
+                        <ul class="subMenu subMenuFirst">
+                            <li><a href="#">천문대소개</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">이용안내</a>
+                        <ul class="subMenu">
+                            <li><a href="#">프로그램</a></li>
+                            <li><a href="#">관람시간표</a></li>
+                            <li><a href="#">이달의 별자리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">천문대예약</a>
+                        <ul class="subMenu">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">예약확인</a></li>
+                            <li><a href="#">예약취소</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="subMenu subMenuLast">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">방문후기</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header> <!-- header#header -->
+
+        <main id="main">
+
+            <div id="slideshow">
+                <div id="shuttleFrame">
+                    <a href="#">
+                        <img src="images/slide_img1.jpg" alt="슬라이드 이미지1" width="1200">
+                        <span class="promotionTxt">
+                            대한천문대 홈페이지 새단장
+                        </span>
+                    </a>
+                    <a href="#">
+                        <img src="images/slide_img2.jpg" alt="슬라이드 이미지2" width="1200">
+                        <span class="promotionTxt">
+                            이달의 별자리 특강
+                        </span>
+                    </a>
+                    <a href="#">
+                        <img src="images/slide_img3.jpg" alt="슬라이드 이미지3" width="1200">
+                        <span class="promotionTxt">
+                            별사진 공모전 개회
+                        </span>
+                    </a>
+                </div> <!-- div#shuttleFrame -->
+            </div> <!-- div#slideshow -->
+
+            <aside id="aside">
+                <div id="tabArea">
+
+                    <button type="button" class="tab">공지사항</button>
+                    <button type="button" class="tab">갤러리</button>
+                    <div id="tabContent1">
+                        <ul id="bbsNotice">
+                            <li><span class="layerPoint">제1회 별사진 공모전 개회됩니다.</span><span class="layerPoint">2020-03-01</span>
+                            </li>
+                            <li><span>하계기간 야간 연장운영합니다.</span><span>2020-03-01</span></li>
+                            <li><span>청소년 대상 천문교실 안내</span><span>2020-03-01</span></li>
+                            <li><span>하늘과 바람과 별과 詩 사생대회</span><span>2020-03-01</span></li>
+                        </ul>
+                    </div>
+                    <div id="tabContent2">
+                        <a href="#"><img src="images/gallery_icon1.jpg" alt="갤러리이미지1" width="90"></a>
+                        <a href="#"><img src="images/gallery_icon2.jpg" alt="갤러리이미지2" width="90"></a>
+                        <a href="#"><img src="images/gallery_icon3.jpg" alt="갤러리이미지3" width="90"></a>
+                    </div>
+                </div> <!-- div#tabArea -->
+
+                <div id="banner">
+                    <img src="images/banner.jpg" alt="배너광고 이미지" width="350">
+                </div>
+
+                <div id="shortcut">
+                    <img src="images/shortcut.jpg" alt="바로가기 이미지" width="350">
+                </div>
+
+            </aside> <!-- aside#aside -->
+
+        </main> <!-- main#main -->
+
+        <footer id="footer">
+            <div id="footerLogo">
+                <img src="images/logo.png" alt="하단 로고" width="140">
+            </div>
+            <!-- div#footerLogo -->
+
+            <div id="componyInfo">
+                <nav id="footerLNB">
+                    <ul>
+                        <li><a href="#">하단메뉴1</a></li>
+                        <li><a href="#">하단메뉴2</a></li>
+                        <li><a href="#">하단메뉴3</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    COPYRIGHT&copy; by WEBDESIGN. ALL RIGHTS RESERVED
+                </div>
+            </div>
+            <!-- div#componyInfo -->
+
+        </footer> <!-- footer#footer -->
+
+
+    </div> <!-- div#wrap -->
+
+
+
+    <!-- 레이어 팝업 시작 -->
+    <div id="layerBG">
+        <div id="layerPopup">
+            <h2>제목 : 하늘과 바람과 별과 詩 사생대회</h2>
+            <p>
+                내용 : 윤동주 시인의 시집 &lt;하늘과 바람과 별과 詩&gt; 출간<br>
+                72주년을 맞이하여 천문대에서 개최하는 사생대회가 열립니다.<br>
+                별 하나에 추억과 사랑과 쓸쓸함과 동경과 시와, 어머니를 그렸던<br>
+                시인처럼 별과 같은 마음을 가진 분들은 참여해주세요.
+            </p>
+            <button type="button" id="closeBtn">닫기</button>
+        </div>
+    </div>
+    <!-- 레이어 팝업 끝 -->
+
+
+
+
+</body>
+
+</html>
